@@ -23,6 +23,7 @@ For Myntra:
 2. Enhanced user engagement
 3. User curated trend generation for increase in sales
 4. Streamline of creative ideas
+   
 For Users:
 1. Personalized fashion choices
 2. Outfits at discounted prices using earned points
