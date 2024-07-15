@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Ad Banner ImageView -->
+    <ImageView
+        android:id="@+id/adBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_ad_banner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewheading"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#FADDD4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score Check: "
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 🪙"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/heading"
+                android:layout_marginStart="8dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- ScrollView for card views -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adBanner"
+        android:layout_above="@id/footer"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Linear Layout for CardViews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="#FADDD4"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/voucher1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ethnic Elegance"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/taglineEthnic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Get yourself some flowy anarkalis having flat 200/- off!"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageEthnic"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ethnic" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Button should be outside CardView to control its position -->
+            <Button
+                android:id="@+id/ethnicButton"
+                android:layout_width="130dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/button"
+                android:text="1000 🪙"
+                android:textSize="17sp"
+                android:layout_below="@id/cardView"
+                android:layout_alignEnd="@id/cardView" />
+
+            <!-- Vintage CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="#FADDD4"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/western"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Western Wind"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/taglinewestern"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Time to shop for some stunning western pieces at flat 250/- off!"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagewestern"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/western" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/westernButton"
+                android:layout_width="150dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/button"
+                android:text="1200 🪙"
+                android:textSize="17sp"
+                android:layout_below="@id/cardView"
+                android:layout_alignEnd="@id/cardView" />
+
+            <!-- Street Style CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="#FADDD4"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/footwear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sneakers Spree"
+                        android:textColor="@android:color/black"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/taglinefootwear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Comfiest shoes on your way! Get today at flat 300/- off!"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imagefootwear"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/footwear" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/footwearButton"
+                android:layout_width="150dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/button"
+                android:text="1500 🪙"
+                android:textSize="17sp"
+                android:layout_below="@id/cardView"
+                android:layout_alignEnd="@id/cardView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bordered_text"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Replace these ImageViews with your actual icons -->
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/myntra" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/fwd" />
+
+        <ImageView
+            android:id="@+id/target"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/target" />
+
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/flash" />
+
+        <ImageView
+            android:id="@+id/diamond"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/diamond" />
+
+    </LinearLayout>
+
+</RelativeLayout>

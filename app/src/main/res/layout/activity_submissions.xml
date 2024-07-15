@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Ad Banner ImageView -->
+    <ImageView
+        android:id="@+id/adBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_ad_banner"
+        android:layout_alignParentTop="true" />
+
+    <!-- ScrollView for the form contents -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adBanner"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Myntra ImageView -->
+            <ImageView
+                android:id="@+id/myntra"
+                android:layout_width="87dp"
+                android:layout_height="57dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Login TextView -->
+
+            <!-- EditText for Name -->
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Upload your submissions!"
+                android:textColor="@android:color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColorHint="@android:color/black"
+                android:layout_marginBottom="20dp" />
+
+            <!-- EditText for Mobile -->
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile no"
+                android:inputType="phone"
+                android:textColorHint="@android:color/black"
+                android:layout_marginBottom="20dp" />
+
+            <!-- EditText for Email -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Spinner for Challenge Name -->
+            <Spinner
+                android:id="@+id/spinnerChallengeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Include an ImageView to display the selected image -->
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="Selected Image" />
+
+            <!-- Upload Button -->
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button"
+                android:text="REGISTER"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordered_text"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/myntra" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/fwd" />
+
+        <ImageView
+            android:id="@+id/target"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/target" />
+
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/flash" />
+
+        <ImageView
+            android:id="@+id/diamond"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/diamond" />
+    </LinearLayout>
+</RelativeLayout>

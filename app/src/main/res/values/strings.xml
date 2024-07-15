@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InstaPostsApp</string>
+    <string-array name="challenge_names">
+        <item>VintageRevival</item>
+        <item>FusionFiesta</item>
+        <item>CosplayGame</item>
+    </string-array>
+</resources>

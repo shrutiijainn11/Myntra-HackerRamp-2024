@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/adBanner"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_ad_banner" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="176dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/signupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="38dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/signupTitle"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/bordered_text"
+        android:hint="  Name"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bordered_text"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bordered_text"
+        android:hint="  Mobile Number"
+        android:inputType="phone"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="372dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/editTextMobile"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:text="SUBMIT"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/myntra"
+        android:layout_width="87dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/adBanner"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/myntra" />
+</RelativeLayout>

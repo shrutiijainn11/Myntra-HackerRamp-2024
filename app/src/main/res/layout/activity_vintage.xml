@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vintage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vintage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/hotpink"
+        android:layout_below="@id/imageView"/>
+
+    <TextView
+        android:id="@+id/challengename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTop"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_family2"
+        android:padding="8dp"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:text="Vintage Revival" />
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/challengename"
+        android:layout_marginTop="-10dp"
+        android:padding="8dp"
+        android:fontFamily="@font/font_family3"
+        android:textSize="18sp"
+        android:text="Time Capsule Couture: Decades of Style Revived!" />
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/hotpink"
+        android:layout_below="@id/tagline" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewBottom"
+        android:layout_above="@id/registerButton">
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="17sp"
+            android:text="🌟 Embrace the Timeless Elegance! 🌟\n\n
+Are you ready to step back in time and embrace the iconic fashion trends that have shaped decades past?\nJoin us for the Vintage Revival Challenge, where we celebrate the beauty of fashion across eras!\n\n
+🎀 Challenge Details:\n\n
+📌 Theme: Fashion from 1920s to 1970s\n
+📌 Objective: Create outfits inspired by the distinctive styles of each decade.\n
+📌 Creativity Unleashed: Mix, match, and reinterpret vintage elements to craft your unique look.\n
+📌 Express Yourself: Whether it’s the glitz of the Roaring Twenties or the free-spirited vibes of the 1970s, let your outfit tell a story of timeless elegance.\n\n➖➖➖\n\n
+🎀 How to Participate:\n\n
+📌 Register: Sign up and receive your decade assignment.\n
+📌 Create: Design your outfit using authentic or inspired vintage pieces.\n
+📌 Showcase: Share your ensemble on social media with #VintageRevivalChallenge.\n
+📌 Inspire: Connect with fellow fashion enthusiasts and celebrate the diversity of vintage fashion.\n\n➖➖➖\n\n
+🎀 Judging Criteria:\n\n
+
+📌 Authenticity: How well does your outfit capture the essence of the chosen decade?\n
+📌 Creativity: Innovative use of vintage elements and personal style.\n
+📌 Presentation: Quality of presentation and storytelling through your look.\n\n➖➖➖\n\n
+🎀 Prizes:\n\n
+🏆 Top Stylist: Exclusive feature and recognition across our platforms.\n\n
+🎁 Runner-Ups: Special vintage-inspired gifts and recognition.\n\n➖➖➖\n\n
+🎀 Timeline:\n\n
+📌 Registration Opens: [Date]\n
+📌 Submission Deadline: [Date]\n
+📌 Winners Announcement: [Date]\n\n
+Get Inspired, Get Creative, and Rewrite Fashion History with Us!\n\n👗✨👜👓👕👒👢" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="REGISTER"
+        android:textSize="17sp" />
+
+</RelativeLayout>

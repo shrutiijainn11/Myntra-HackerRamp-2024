@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/adBanner"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_ad_banner" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="176dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="12dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="-35dp"
+        android:layout_toRightOf="@id/login"
+        android:text="or "
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/or"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="170dp"
+        android:text="Signup"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/signup"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bordered_text"
+        android:hint="  Name"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bordered_text"
+        android:hint="  Mobile Number"
+        android:inputType="phone"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="372dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/mobileNumber"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@null"
+        android:text="CONTINUE"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/trouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continueButton"
+        android:layout_marginTop="16dp"
+        android:text="Having trouble logging in?"
+        android:textColor="@color/hotpink"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/myntra"
+        android:layout_width="87dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/adBanner"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/myntra" />
+
+</RelativeLayout>
+
+

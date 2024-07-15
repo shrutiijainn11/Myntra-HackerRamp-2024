@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Image for the challenge -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cosplay" />
+
+    <!-- Top divider view -->
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/imageView"
+        android:background="@color/hotpink" />
+
+    <!-- Challenge name text -->
+    <TextView
+        android:id="@+id/challengename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTop"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_family2"
+        android:text="Cosplay Game"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <!-- Tagline text -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/challengename"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font_family3"
+        android:text="Transforming Imagination into Reality!"
+        android:textSize="21sp" />
+
+    <!-- Bottom divider view -->
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tagline"
+        android:background="@color/hotpink" />
+
+    <!-- ScrollView for challenge details -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewBottom"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <!-- Details text -->
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:padding="8dp"
+            android:text="🌟 Cosplay Couture: Characters Come to Life! 🌟\n\n
+Are you ready to bring your favorite characters to life through fashion?\n Join us for the Cosplay Couture Challenge, where creativity meets craftsmanship, and characters step out of the screen and onto the runway!\n\n
+🎀 Challenge Details:\n\n
+📌 Theme: Iconic characters from anime, movies, TV shows, video games, or comics.\n
+📌 Objective: Design and create an outfit that represents your chosen character with accuracy and flair.\n
+📌 Creativity Unleashed: Incorporate unique elements and personal touches while staying true to the character's essence.\n
+📌 Express Yourself: Whether it's a beloved hero, a notorious villain, or a charming sidekick, let your outfit tell their story in your own way.\n\n➖➖➖\n\n
+🎀 How to Participate:\n\n
+📌 Register: Sign up and select your character.\n
+📌 Create: Design and craft your cosplay outfit with attention to detail and creativity.\n
+📌 Showcase: Share your ensemble on social media with #CosplayCoutureChallenge.\n
+📌 Inspire: Connect with fellow cosplayers and celebrate the art of bringing characters to life.\n\n➖➖➖\n\n
+🎀 Judging Criteria:\n\n
+📌 Accuracy: How closely does your outfit match the character's appearance and style?\n
+📌 Creativity: Original and innovative interpretation of the character's design.\n
+📌 Craftsmanship: Quality and attention to detail in the construction of the outfit.\n
+📌 Presentation: Quality of presentation and storytelling through your look.\n\n➖➖➖\n\n
+🎀 Prizes:\n\n
+🏆 Top Cosplayer: Exclusive feature and recognition across our platforms.\n
+🎁 Runner-Ups: Special cosplay-inspired gifts and recognition.\n\n➖➖➖\n\n
+🎀 Timeline:\n\n
+📌 Registration Opens: [Date]\n
+📌 Submission Deadline: [Date]\n
+📌 Winners Announcement: [Date]\n\n
+Get Inspired, Get Creative, and Rewrite Fashion History with Us!\n\n👗✨👜👓👕👒👢" />
+    </ScrollView>
+
+    <!-- Register button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="REGISTER"
+        android:textSize="17sp" />
+
+</RelativeLayout>

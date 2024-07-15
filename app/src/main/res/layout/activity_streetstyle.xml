@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".streetstyle">
+
+    <!-- Image for the challenge -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fusion" />
+
+    <!-- Top divider view -->
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/imageView"
+        android:background="@color/hotpink" />
+
+    <!-- Challenge name text -->
+    <TextView
+        android:id="@+id/challengename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dividerTop"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/font_family2"
+        android:text="Fusion Fiesta"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <!-- Tagline text -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/challengename"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/font_family3"
+        android:text="Celebrate Heritage with a Modern Flair!"
+        android:textSize="21sp" />
+
+    <!-- Bottom divider view -->
+    <View
+        android:id="@+id/dividerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tagline"
+        android:background="@color/hotpink" />
+
+    <!-- ScrollView for challenge details -->
+
+    <!-- Register button -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerBottom"
+        android:layout_marginTop="2dp"
+        android:padding="8dp">
+
+        <!-- Details text -->
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="🌟 Street Style Booming! 🌟\n\n
+Are you ready to capture the essence of street fashion from cities and regions around the world?\nJoin us for the Street Style Challenge, where we celebrate the diverse and dynamic world of street fashion!\n\n
+🎀 Challenge Details:\n\n
+📌 Theme: Fashion trends inspired by street styles from different cities or regions.\n
+📌 Objective: Create outfits that reflect the unique street fashion of your chosen location.\n
+📌 Creativity Unleashed: Blend, reinterpret, and innovate street fashion elements to create your unique look.\n
+📌 Express Yourself: Whether it's the edgy vibes of New York, the chic elegance of Paris, or the bold statements of Tokyo, let your outfit tell a story of global style.\n\n➖➖➖\n\n
+🎀 How to Participate:\n\n
+📌 Register: Sign up and choose your city or region.\n
+📌 Create: Design your outfit using elements inspired by the street fashion of your chosen location.\n
+📌 Showcase: Share your ensemble on social media with #StreetStyleChallenge.\n
+📌 Inspire: Connect with fellow fashion enthusiasts and celebrate the diversity of global street fashion.\n\n➖➖➖\n\n
+🎀 Judging Criteria:\n\n
+📌 Authenticity: How well does your outfit represent the street style of the chosen city or region?\n
+📌 Creativity: Original and innovative use of street fashion elements.\n
+📌 Presentation: Quality of presentation and storytelling through your look.\n\n➖➖➖\n\n
+🎀 Prizes:\n\n
+🏆 Top Stylist: Exclusive feature and recognition across our platforms.\n
+🎁 Runner-Ups: Special street fashion-inspired gifts and recognition.\n\n➖➖➖\n\n
+🎀 Timeline:\n\n
+📌 Registration Opens: [Date]\n
+📌 Submission Deadline: [Date]\n
+📌 Winners Announcement: [Date]\n\n
+Get Inspired, Get Creative, and Rewrite Fashion History with Us!\n\n👗✨👜👓👕👒👢"
+            android:textSize="17sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:text="REGISTER"
+        android:textSize="17sp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InstaPostsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/hotpink</item>
+        <item name="colorPrimaryVariant">@color/hotpink</item>
+        <item name="colorOnPrimary">@color/upload</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.InstaPostsApp" parent="Base.Theme.InstaPostsApp" />
+</resources>

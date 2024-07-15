@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordered_text"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- Replace these ImageViews with your actual icons -->
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/myntra" />
+
+        <ImageView
+            android:id="@+id/fwd"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:src="@drawable/fwd" />
+
+        <ImageView
+            android:id="@+id/target"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/target" />
+
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/flash" />
+
+        <ImageView
+            android:id="@+id/diamond"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:src="@drawable/diamond" />
+    </LinearLayout>
+
+</RelativeLayout>

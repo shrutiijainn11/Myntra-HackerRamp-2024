@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="95dp"
+        android:layout_height="81dp"
+        android:padding="16dp"
+        android:src="@drawable/profile"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/imageHeart"
+        android:layout_width="105dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:padding="16dp"
+        android:src="@drawable/heart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/imageBell"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="4dp"
+        android:padding="16dp"
+        android:src="@drawable/bell"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/imageMyntra"
+        android:layout_width="118dp"
+        android:layout_height="60dp"
+        android:padding="100dp"
+        android:src="@drawable/myntra"
+        android:layout_below="@id/imageProfile"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_below="@id/imageMyntra"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bordered_text"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="32dp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="?android:attr/editTextBackground"
+            android:hint="Search"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="32dp"
+            android:src="@drawable/camera" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_microphone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/search"
+        android:layout_above="@id/footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/challengeButton"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="CHALLENGE"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/outfit" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="259dp"
+                android:layout_marginTop="-45dp"
+                android:src="@drawable/outfit_men" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordered_text"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/myntra" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/fwd" />
+
+        <ImageView
+            android:id="@+id/target"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/target" />
+
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/flash" />
+
+        <ImageView
+            android:id="@+id/diamond"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:src="@drawable/diamond" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/search"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="-30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/home_bordered_text"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/woman" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fashion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/home_bordered_text"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cosmetics" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beauty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_bordered_text"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/decor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/apps" />
+    </LinearLayout>
+
+</RelativeLayout>
